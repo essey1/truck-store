@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "F150",
+      "price": 10.99,
+      "imgUrl": "/img/truck.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Toyota",
+      "price": 1199,
+      "imgUrl": "/img/truck.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Tacoma",
+      "price": 1.05,
+      "imgUrl": "/img/truck.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Sizuku",
+      "price": 14000,
+      "imgUrl": "/img/truck.jpg"
+    }
+  ]
