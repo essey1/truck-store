@@ -6,7 +6,7 @@ interface ShoppingCart {
     increaseCartQuantity: (id: number) => void;
     decreaseCartQuantity: (id: number) => void;
     removeFromCart: (id: number) => void;
-  }
+}
 
 type StoreItemProps = {
     id: number;
