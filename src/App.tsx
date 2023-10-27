@@ -18,9 +18,7 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </main>
-      <footer>
-
-      </footer>
+      <footer></footer>
     </ShoppingCartProvider>
   )
 }
