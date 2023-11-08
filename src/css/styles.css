@@ -22,7 +22,7 @@
           .125em .125em .25em rgba(0,0,0,.15);
 }
 
-@media screen and (min-width: 1000px) {
+@media (min-width: 1000px) {
   :root {
     --fs-h1: 2.4rem;
     --fs-h2: 1.75rem;
