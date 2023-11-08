@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-text);
+    font-size: var(--fs-body);
+    color: var(--text-color);
+    background-color: var(--clr-white);
+    transition: all 250ms cubic-bezier(.5, 0, .5, 1);
+}
+ 
+button {
+    cursor: pointer;
+}
+  
+h1,
+h2,
+h3 {
+    font-family: var(--ff-title);
+    color: var(--clr-dark-accent);
+}
+  
+p {
+    line-height: 1.5;
+}
+  
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+}
