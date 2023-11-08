@@ -11,19 +11,13 @@ html {
 }
   
 body {
-    margin: 0;
-    padding: 0;
     font-family: var(--ff-text);
     font-size: var(--fs-body);
     color: var(--text-color);
     background-color: var(--clr-white);
     transition: all 250ms cubic-bezier(.5, 0, .5, 1);
 }
- 
-button {
-    cursor: pointer;
-}
-  
+
 h1,
 h2,
 h3 {
@@ -34,11 +28,15 @@ h3 {
 p {
     line-height: 1.5;
 }
-  
+
 ul {
     list-style: none;
 }
-  
+
 a {
     text-decoration: none;
+}
+
+button {
+    cursor: pointer;
 }
