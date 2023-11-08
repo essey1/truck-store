@@ -1,3 +1,34 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900;1000&family=Russo+One&display=swap");
+/* Custom properties */
+:root {
+  --clr-dark: #0a0a0f;
+  --clr-white: #ffffff;
+  --clr-light-grey: #eeeeee;
+  --clr-dark-accent: #02021d;
+  --clr-accent: #10107c;
+  --clr-light-accent: #7979de;
+  --ff-text: "Nunito", sans-serif;
+  --ff-title: "Russo One", sans-serif;
+  --fs-h1: 2rem;
+  --fs-h2: 1.5rem;
+  --fs-h3: 1.125rem;
+  --fs-body: 1rem;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 500;
+  --fw-bolder: 800;
+  --bs: .25em .25em .75em rgba(0,0,0,.25),
+          .125em .125em .25em rgba(0,0,0,.15);
+}
 
+@media screen and (min-width: 1000px) {
+  :root {
+    --fs-h1: 2.4rem;
+    --fs-h2: 1.75rem;
+    --fs-h3: 1.4rem;
+    --fs-body: 1.125rem;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
