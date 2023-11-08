@@ -10,8 +10,7 @@ export function Navbar() {
     const { openCart, cartQuantity } = useShoppingCart() as ShoppingCart
     return <div className="nav">
         <div className="nav__logo">
-            Logo
-            <img src="#" alt="" />
+            <img src="img/logo.png" alt="logo" />
         </div>
         <button className="nav__toggle" aria-label="toggle navigation">
             <span className="hamburger"></span>
