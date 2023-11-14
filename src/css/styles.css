@@ -26,7 +26,7 @@
   :root {
     --fs-h1: 2.4rem;
     --fs-h2: 1.75rem;
-    --fs-h3: 1.4rem;
+    --fs-h3: 1.3rem;
     --fs-body: 1.125rem;
   }
 }
@@ -72,6 +72,66 @@ a {
 
 button {
   cursor: pointer;
+}
+
+/* header */
+header {
+  position: fixed;
+  width: 100%;
+  padding: 0.5em;
+  background-color: var(--clr-white);
+  border-bottom: 1px solid #ddd;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.nav__list {
+  font-size: var(--fs-h3);
+  list-style: none;
+  display: flex;
+  margin: 0.25em 1.5em 0.2em;
+  margin-right: auto;
+  padding: 0;
+}
+.nav__list .nav__link {
+  color: var(--clr-dark-acent);
+}
+.nav__list .nav__link:hover {
+  opacity: 0.6;
+}
+.nav__list .nav__link + .nav__link {
+  margin-left: 1em;
+}
+
+.nav__cart {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  margin: -0.15em 1.5em;
+  margin-left: auto;
+}
+.nav__cart img {
+  max-width: 40px;
+}
+
+.nav__cart--circle {
+  position: absolute;
+  top: 1.5em;
+  left: 1.6em;
+  font-size: 0.9rem;
+  font-weight: var(--fw-bold);
+  padding: 0 0.4em;
+  color: var(--clr-white);
+  border-radius: 50%;
+  background-color: rgb(220, 0, 0);
 }
 
 /*# sourceMappingURL=styles.css.map */
