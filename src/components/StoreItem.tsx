@@ -25,20 +25,24 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
     const quantity = getItemQuantity(id)
     
     return <div className="card">
-        <img src={imgUrl} className="card__img" alt="" />
-        <div className="card__title">{name}</div>
-        <div className="card__price">{formatCurrency(price)}</div>
-        <div className="card__cart">
-            {quantity === 0 ? (
-                <button className="card__cart--button" onClick={() => increaseCartQuantity(id)}>+ Add To Cart</button>
-            ): (<div className="card__cart--counter">
-                <button onClick={() => decreaseCartQuantity(id)}>-</button>
-                <div className="card__cart--quantity">
-                    <span>{quantity}</span>in cart
-                </div>
-                <button onClick={() => increaseCartQuantity(id)}>+</button>
-                <button className="card__cart--remove" onClick={() => removeFromCart(id)}>Remove</button>
-            </div> )}
+        <div className="card-right">
+            <img src={imgUrl} className="card__img" alt="" />
+        </div>
+        <div className="card-left">
+            <div className="card__title">{name}</div>
+            <div className="card__price">{formatCurrency(price)}</div>
+            <div className="card__cart">
+                {quantity === 0 ? (
+                    <button className="card__cart--button" onClick={() => increaseCartQuantity(id)}>+ Add To Cart</button>
+                ): (<div className="card__cart--counter">
+                    <button onClick={() => decreaseCartQuantity(id)}>-</button>
+                    <div className="card__cart--quantity">
+                        <span>{quantity}</span> in cart
+                    </div>
+                    <button onClick={() => increaseCartQuantity(id)}>+</button>
+                    <button className="card__cart--remove" onClick={() => removeFromCart(id)}>Remove</button>
+                </div> )}
+            </div>
         </div>
     </div>
 }

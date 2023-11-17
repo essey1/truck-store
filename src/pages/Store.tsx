@@ -2,9 +2,9 @@ import { StoreItem } from "../components/StoreItem"
 import storeItems from "../data/items.json"
 
 export function Store() {
-    return <>
-        <h1>Store</h1>
-        <div>
+    return <section>
+        <h1 className="section__title">Store</h1>
+        <div className="card-container">
             {storeItems.map(item => (
                 <div key={item.id}>
                     <StoreItem {...item} />
@@ -14,5 +14,5 @@ export function Store() {
 
             </div>
         </div>
-    </>
+    </section>
 }

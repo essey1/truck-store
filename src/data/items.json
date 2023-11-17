@@ -1,26 +1,26 @@
 [
     {
       "id": 1,
-      "name": "F150",
+      "name": "F-150 Raptor",
       "price": 10.99,
-      "imgUrl": "/img/truck.jpg"
+      "imgUrl": "/img/f150-raptor.png"
     },
     {
       "id": 2,
-      "name": "Toyota",
+      "name": "Toyota Tundra",
       "price": 1199,
-      "imgUrl": "/img/truck.jpg"
+      "imgUrl": "/img/toyota-tundra.png"
     },
     {
       "id": 3,
       "name": "Tacoma",
       "price": 1.05,
-      "imgUrl": "/img/truck.jpg"
+      "imgUrl": "/img/f150-raptor.png"
     },
     {
       "id": 4,
       "name": "Sizuku",
       "price": 14000,
-      "imgUrl": "/img/truck.jpg"
+      "imgUrl": "/img/toyota-tundra.png"
     }
   ]
