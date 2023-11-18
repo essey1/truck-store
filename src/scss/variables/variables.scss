@@ -1,5 +1,5 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900;1000&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&family=Russo+One&display=swap');
 
 /* Custom properties */
 :root {
@@ -10,7 +10,7 @@
     --clr-accent: #10107c;
     --clr-light-accent: #7979de;
 
-    --ff-text: 'Nunito', sans-serif;
+    --ff-text: 'Exo 2', sans-serif;
     --ff-title: 'Russo One', sans-serif;
 
     --fs-h1: 2rem;
@@ -20,8 +20,9 @@
 
     --fw-light: 300;
     --fw-regular: 400;
-    --fw-bold: 500;
-    --fw-bolder: 800;
+    --fw-meduim: 500;
+    --fw-bold: 600;
+    --fw-bolder: 700;
 
     --bs: .25em .25em .75em rgba(0,0,0,.25),
             .125em .125em .25em rgba(0,0,0,.15);

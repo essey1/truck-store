@@ -33,13 +33,13 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
             <div className="card__price">{formatCurrency(price)}</div>
             <div className="card__cart">
                 {quantity === 0 ? (
-                    <button className="card__cart--button" onClick={() => increaseCartQuantity(id)}>+ Add To Cart</button>
+                    <button className="card__cart--button" onClick={() => increaseCartQuantity(id)}>Add To Cart</button>
                 ): (<div className="card__cart--counter">
-                    <button onClick={() => decreaseCartQuantity(id)}>-</button>
+                    <button className="subtract-from-cart" onClick={() => decreaseCartQuantity(id)}>-</button>
                     <div className="card__cart--quantity">
                         <span>{quantity}</span> in cart
                     </div>
-                    <button onClick={() => increaseCartQuantity(id)}>+</button>
+                    <button className="add-to-cart" onClick={() => increaseCartQuantity(id)}>+</button>
                     <button className="card__cart--remove" onClick={() => removeFromCart(id)}>Remove</button>
                 </div> )}
             </div>

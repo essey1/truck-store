@@ -18,7 +18,7 @@ export function CartItem({ id, quantity }: CartItemProps) {
 
     return (
         <div className="cart__item">
-            <img src={item.imgUrl}></img>
+            <img className="cart__item--img" src={item.imgUrl}></img>
             <div className="cart__item--name">
                 {item.name}
                 {quantity > 1 && <span>x{quantity}</span>}

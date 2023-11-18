@@ -26,6 +26,7 @@ section{
 
 .card-left {
     margin-left: 1em;
+    max-width: 150px;
 }
 
 .card__img{
@@ -38,23 +39,44 @@ section{
     font-weight: var(--fw-bolder);
 }
 
-.card__cart--button{
+.card__cart--button,
+.card__cart--counter button{
     font-family: var(--ff-text);
-    font-weight: 600;
+    font-size: var(--fs-body);
     text-decoration: none;
     background-color: var(--clr-white);
     border: 2px solid var(--clr-accent);
     outline: 2px solid var(--clr-accent);
     outline-offset: -2px;
-    padding: .5em .8em;
+    padding: .4em .7em;
     margin: .35em;
     transition: outline-offset 200ms ease;
 }
 
+
+.card__cart--counter{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 150px;
+    button{
+        padding: 0 .4em .15em;
+    }
+    .card__cart--remove{
+        padding: .25em .5em;
+        border: 2px solid rgb(175, 0, 0);
+        outline: 2px solid rgb(175, 0, 0);
+        text-align: center;
+    }
+}
+
 .card__cart--button:hover,
-.card__cart--button:focus {
+.card__cart--button:focus,
+.card__cart--counter button:hover,
+.card__cart--counter button:focus {
     outline-offset: .125rem;
 }
+
+
 
 @media (min-width: 400px){
     .card__img{

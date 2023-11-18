@@ -1,5 +1,5 @@
 /* Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900;1000&family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&family=Russo+One&display=swap");
 /* Custom properties */
 :root {
   --clr-dark: #0a0a0f;
@@ -8,7 +8,7 @@
   --clr-dark-accent: #02021d;
   --clr-accent: #10107c;
   --clr-light-accent: #7979de;
-  --ff-text: "Nunito", sans-serif;
+  --ff-text: "Exo 2", sans-serif;
   --ff-title: "Russo One", sans-serif;
   --fs-h1: 2rem;
   --fs-h2: 1.5rem;
@@ -16,8 +16,9 @@
   --fs-body: 1rem;
   --fw-light: 300;
   --fw-regular: 400;
-  --fw-bold: 500;
-  --fw-bolder: 800;
+  --fw-meduim: 500;
+  --fw-bold: 600;
+  --fw-bolder: 700;
   --bs: .25em .25em .75em rgba(0,0,0,.25),
           .125em .125em .25em rgba(0,0,0,.15);
 }
@@ -162,6 +163,7 @@ section {
 
 .card-left {
   margin-left: 1em;
+  max-width: 150px;
 }
 
 .card__img {
@@ -174,21 +176,39 @@ section {
   font-weight: var(--fw-bolder);
 }
 
-.card__cart--button {
+.card__cart--button,
+.card__cart--counter button {
   font-family: var(--ff-text);
-  font-weight: 600;
+  font-size: var(--fs-body);
   text-decoration: none;
   background-color: var(--clr-white);
   border: 2px solid var(--clr-accent);
   outline: 2px solid var(--clr-accent);
   outline-offset: -2px;
-  padding: 0.5em 0.8em;
+  padding: 0.4em 0.7em;
   margin: 0.35em;
   transition: outline-offset 200ms ease;
 }
 
+.card__cart--counter {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 150px;
+}
+.card__cart--counter button {
+  padding: 0 0.4em 0.15em;
+}
+.card__cart--counter .card__cart--remove {
+  padding: 0.25em 0.5em;
+  border: 2px solid rgb(175, 0, 0);
+  outline: 2px solid rgb(175, 0, 0);
+  text-align: center;
+}
+
 .card__cart--button:hover,
-.card__cart--button:focus {
+.card__cart--button:focus,
+.card__cart--counter button:hover,
+.card__cart--counter button:focus {
   outline-offset: 0.125rem;
 }
 
