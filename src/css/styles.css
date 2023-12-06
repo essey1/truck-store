@@ -233,5 +233,8 @@ section {
     max-width: 390px;
   }
 }
+.cart__item--img {
+  max-width: 200px;
+}
 
 /*# sourceMappingURL=styles.css.map */
