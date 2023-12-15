@@ -92,6 +92,7 @@ header {
   align-items: center;
   max-width: 400px;
   margin: 0 auto;
+  transition: transform 600ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 
 .nav__list {
@@ -118,9 +119,15 @@ header {
   display: flex;
   margin: -0.15em 1.5em;
   margin-left: auto;
+  transition: opacity 150ms cubic-bezier(0.5, 0, 0.5, 1);
+  transition: transform 500ms ease;
 }
 .nav__cart img {
   max-width: 40px;
+}
+
+.nav__cart:hover {
+  opacity: 0.8;
 }
 
 .nav__cart--circle {
@@ -234,7 +241,50 @@ section {
   }
 }
 .cart__item--img {
-  max-width: 200px;
+  max-width: 100px;
+}
+
+.btn-close {
+  background-image: url(../../../public/img/close-button.png);
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  transition: all 150ms cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.btn-close:hover {
+  opacity: 0.7;
+}
+
+.cart {
+  position: fixed;
+  background-color: white;
+  box-shadow: var(--bs);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  border-top-left-radius: 1.5em;
+  transform: translateX(25%);
+  transition: all 500ms ease;
+}
+
+@media (min-width: 500px) {
+  .cart {
+    transform: translateX(40%);
+  }
+}
+@media (min-width: 750px) {
+  .cart {
+    transform: translateX(60%);
+  }
+}
+@media (min-width: 1150px) {
+  .cart {
+    transform: translateX(70%);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

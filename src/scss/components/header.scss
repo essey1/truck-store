@@ -15,6 +15,7 @@ header {
     align-items: center;
     max-width: 400px;
     margin: 0 auto;
+    transition: transform 600ms cubic-bezier(.5, 0, .5, 1);
 }
 
 .nav__list {
@@ -41,9 +42,15 @@ header {
     display: flex;
     margin: -.15em 1.5em; 
     margin-left: auto;
+    transition: opacity 150ms cubic-bezier(.5, 0, .5, 1);
+    transition: transform 500ms ease;
     img{
         max-width: 40px;
     }
+}
+
+.nav__cart:hover{
+    opacity: .8;
 }
 
 .nav__cart--circle{
