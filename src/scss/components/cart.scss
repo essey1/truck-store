@@ -24,9 +24,8 @@
     left: 0;
     right: 0;
     z-index: 100;
-    border-top-left-radius: 1.5em;
-    transform: translateX(25%);
-    transition: all 500ms ease;
+    transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
+    transform: translateX(10%);
 }
 
 @media (min-width: 500px) {
