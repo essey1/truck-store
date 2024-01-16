@@ -41,3 +41,15 @@ a {
 button {
     cursor: pointer;
 }
+
+section{
+    padding: 7em 2em;
+}
+
+.section__title{
+    color: var(--clr-accent);
+    text-align: center;
+    font-size: var(--fs-h1);
+    letter-spacing: 1px;
+    margin-bottom: .35em;
+}
