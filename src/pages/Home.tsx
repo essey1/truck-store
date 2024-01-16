@@ -5,9 +5,9 @@ export function Home() {
                 Truck Store
             </h1>
             <p className="section__subtitle section__subtitle--home">Moving you Forward, Mile by Mile</p>
-            <video className="video-bg" 
-                autoPlay muted loop controls>
-                <source src="1.mp4" type="video/mp4"></source>
+            <video autoPlay muted loop>
+                <source src="img/TRuck.webm" type="video/webm" />
+                Sorry, your browser doesn't support videos.
             </video>
         </section>
     </>
