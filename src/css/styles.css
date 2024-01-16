@@ -154,15 +154,32 @@ header {
   background-color: rgb(220, 0, 0);
 }
 
+.section__title--home,
+.section__subtitle--home {
+  color: var(--clr-white);
+}
+
 .section__subtitle--home {
   text-align: center;
 }
 
 .home {
   position: relative;
+  display: grid;
+  align-items: end;
+  height: 80svh;
+  padding-bottom: 0;
 }
-.home video {
+.home .home__video {
   position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  min-width: 100vw;
+  min-height: 100%;
+  z-index: -1;
+  overflow: hidden;
 }
 
 /* Store */
