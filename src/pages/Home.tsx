@@ -10,7 +10,7 @@ export function Home() {
             </div>
             
             <video className="home__video" autoPlay muted loop>
-                <source src="img/TRuck.mp4" type="video/mp4" />
+                <source src="img/pickup.mp4" type="video/mp4" />
                 Sorry, your browser doesn't support videos.
             </video>
         </section>
