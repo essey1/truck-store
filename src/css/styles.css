@@ -176,8 +176,9 @@ header {
   right: 0;
   bottom: 0;
   top: 0;
-  min-width: 100vw;
-  min-height: 100%;
+  min-width: 100%;
+  max-height: 100vh;
+  max-height: 100svh;
   z-index: -1;
   overflow: hidden;
 }
